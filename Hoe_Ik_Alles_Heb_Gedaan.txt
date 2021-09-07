@@ -1,0 +1,8 @@
+Overzicht wat gedaan met db naar web-app:
+
+zodra de gebruiker inlogd verandert lotingebruik van '0' naar '1' dit zorgt er voor dat als er een lot wordt getrokken dat de gebruiker niet zichzelf trekt.
+als de gebruiker een lot trekt verandert lotgebruikt van '0' naar '1' dit duidt aan dat de gebruiker een lot heeft getrokken, dit zorgt er voor dat de gebruiker 
+niet nog een keer mag trekken. aan de andere kant wordt er bij de getrokken lot de record gebruikerGeloot 
+van '0' naar '1' gezet. dit zorgt ervoor dat deze persoon verder niet meer gekozen kan worden.
+
+als de gebruiker een lot heeft getrokken wordt het getrokken lot in het db gezet onder de naam getrokkenLot, dit zorgt ervoor dat de getrokken lot ook op meerdere plekken gebruikt kan worden bv. als de gebruiker zijn/haar lot wilt inzien wordt de getrokken lot opgehaald bij de ingelogde naam.
